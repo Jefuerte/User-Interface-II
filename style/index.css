@@ -30,8 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 *{
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    padding:20px;
+    margin:20px;
     max-width:100%;
      
     background-color:white ; 
@@ -51,17 +51,20 @@ h1{
     color: black;
     font-size:6rem;
     background-color:#006666;
+    padding: 30px;
+
 
 }
 .links{
     display: flex;
     clear: both;
-    border : 1px solid #555;
     text-align : center;
     flex-direction: row;
     padding-left: 0%;
-    padding-bottom: 2%;
+    padding-bottom: 50%;
     background-color:white ;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 .links a{
     padding-left: 3%;
@@ -72,18 +75,28 @@ h1{
     color:#e8ffff;
     text-decoration: none;
     }
+    .links a:hover{
+        background-color: lightsteelblue;
+        color: black;
+    }
     
 .topsection {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
+        padding: 0px;
     }
+.topsection p{
+    padding: 0px;
+
+}
+
 .description {
     padding:20px;
     
 }   
 h2{
-    padding: 20px;
+    padding: 0px;
 }
     
     .topsection button{
@@ -91,12 +104,16 @@ h2{
         color: teal;
         border: 1px solid black;
         padding: 20px;
-        margin-left: 20px;
+        margin-left: 0px;
         }
+ .topsection button:hover{
+     background-color: lightsteelblue;
+     color: black;
+ }
  .description .p{
     padding: 20px;
-    margin-left: 20px;
-    text-align: center;
+    margin-left: 0px;
+    text-align: left;
     width: 50%;
 
         }
@@ -107,6 +124,8 @@ h2{
         margin-right: 0%;
         margin-top: 4%;
         margin-bottom: 4%;
+        padding: 20px;
+        height: 25%;
         
     }
     .projectpics2{
@@ -116,6 +135,7 @@ h2{
         margin-right: 0%;
         margin-top: 4%;
         margin-bottom: 4%;
+        padding: 20px;
     }
 
     #contact {
@@ -134,4 +154,52 @@ h2{
     }
     
         
+    @media (max-width:800px) {
+        
+        .topsection img{
+          height: 50%;
+          width: 50%;
+          padding: 20px;
+          }
+          .projectpics{
+              flex-flow: row-wrap;
+              width: 75%;
+              justify-content:space-between;
+              text-align: center;
+              margin-left: 100px;
+          }
+          .projectpics2{
+            flex-flow: row-wrap;
+            width: 75%;
+            justify-content:space-between;
+            text-align: center;
+            margin-left: 100px;
+        }
+      }
+      
+
+
+    @media (max-width:500px) {
+       .topsection img {
+           width: 100%
+       }
+       .topsection {
+           flex-direction: column;
+           text-align: center;
+       }
+       .projectpics{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        padding-right: 100px;
+    
+    }
+    .projectpics2{
+     flex-direction: column;
+     text-align: center;
+     padding-top:10px ;
+     padding-right: 100px;
+ }
+       }
     
