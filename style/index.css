@@ -155,11 +155,10 @@ h2{
     
         
     @media (max-width:800px) {
-        
         .topsection img{
           height: 50%;
           width: 50%;
-          padding: 20px;
+          padding: 10px;
           }
           .projectpics{
               flex-flow: row-wrap;
@@ -180,8 +179,19 @@ h2{
 
 
     @media (max-width:500px) {
-       .topsection img {
-           width: 100%
+        .header{
+            text-align: center;
+        }
+       .links{
+           flex-flow: column;
+           padding: auto;
+           margin-left: 20%;
+           margin-right: 20%;
+       }
+       
+       
+        .topsection img {
+           width: 100%;
        }
        .topsection {
            flex-direction: column;
@@ -190,16 +200,17 @@ h2{
        .projectpics{
         flex-direction: column;
         text-align: center;
-        padding-top: 30px;
-        padding-bottom: 0px;
+        padding-top: 5%;
+        padding-bottom: 2%;
         padding-right: 100px;
-    
     }
+    
     .projectpics2{
-     flex-direction: column;
-     text-align: center;
-     padding-top:10px ;
-     padding-right: 100px;
- }
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0;
+        padding-right: 100px;
+    }
        }
     
